@@ -80,7 +80,7 @@ export type Payment = {
   Nombre:string
 }
  
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<Payment>[] = [
   {
     id: "select",
     header: ({ table }) => (

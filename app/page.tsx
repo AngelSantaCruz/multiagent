@@ -17,7 +17,7 @@ export default function Page() {
   useMotionValueEvent(scrollY, "change", (latest) => {
   
       setSection(()=>{
-        return (scrollYProgress.get()>0.10 && scrollYProgress.get()<0.34 )?1:(scrollYProgress.get()>0.34)?2:0
+        return (scrollYProgress.get()>0.10 && scrollYProgress.get()<0.34 )?1:(scrollYProgress.get()>0.34 && scrollYProgress.get()<0.54 )?2:(scrollYProgress.get()>0.54)?3:0
       })
     
   })
@@ -110,14 +110,32 @@ export default function Page() {
           </div>
        
         <div className="basis-1/2 p-10 flex items-center justify-center">
-           <Image src={'/chatbot.svg'} alt="decor" width={150} height={100} className={`delay-100 w-3/4 h-3/4`}/>
+           <Image src={'/chatbot.svg'} alt="decor" width={150} height={100} className={`${sections>=2 ? 'translate-x-0 ': 'translate-x-[100vw] '} transition-transform ease-in-out duration-700 delay-100 w-3/4 h-3/4`}/>
         </div>
       </section>
       <section className="w-full h-screen bg-teal-50 relative  flex flex-row">
         <div className="basis-1/2 p-10  flex items-center justify-center">
-          <Image src={'/dashboard.svg'} alt="decor" width={150} height={100} className={`delay-100 w-3/4 h-3/4  `}/>
+          <Image src={'/dashboard.svg'} alt="decor" width={150} height={100} className={`${sections>=3 ? 'translate-x-0 ': '-translate-x-[100vw] '} transition-transform ease-in-out duration-700 delay-100 w-3/4 h-3/4  `}/>
         </div>
-        <div className="basis-1/2"></div>
+        <div className="basis-1/2 md:pl-24 p-16 flex flex-col items-center md:items-start justify-center gap-8 relative z-30 ">
+          
+        
+        <h3 className={`${sections>=3 ? 'translate-x-0 ': 'translate-x-[100vw] '} transition-transform ease-in-out duration-700 text-teal-400 text-5xl font-bold text-center md:text-start `}>
+            Programa tu bot de respuestas automaticas
+            </h3>
+            <div className={`${sections>=3 ? 'translate-x-0 ': 'translate-x-[100vw] '} transition-transform ease-in-out duration-700  flex flex-col gap-4 `}>
+              
+              <h4 className='text-2xl font-semibold text-slate-600 md:text-start text-center'>Con total integracion con tu negocio </h4>
+              <p className='text-md font-semibold text-slate-400 md:text-start text-center'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor mi at ex rutrum semper interdum eget enim. Sed rutrum eu libero et ultrices.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor mi at ex rutrum semper interdum eget enim. Sed rutrum eu libero et ultrices.
+
+              </p>
+            </div>
+
+          
+
+        </div>
         
           
       </section>
@@ -130,7 +148,7 @@ export default function Page() {
               <h4 className="text-teal-400 text-4xl font-bold">Contáctanos</h4>
               <p className="text-md text-neutral-700 w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor mi at ex rutrum semper interdum eget enim. Sed rutrum eu libero et ultrices.</p>
             </div>
-            <Image src={'/persona.svg'} alt="person" className="w-3/4 h-3/4 min-w-[400px] min-h-[400px] absolute -bottom-10 xl:bottom-0 left-1/4 z-10" width={100} height={100}/>
+            <Image src={'/persona.svg'} alt="person" className="w-3/4 h-3/4 min-w-[400px] min-h-[400px] absolute -bottom-10  left-1/4 z-10" width={100} height={100}/>
 
           </div>
           <div className="basis-1/2 flex flex-col gap-6 justify-center items-center">
