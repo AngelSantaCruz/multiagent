@@ -36,14 +36,14 @@ const data: Payment[] = [
  
 ]
  
-export type Payment = {
+type Payment = {
   id: string
   account:String
   status: "pending" | "processing" | "success" | "failed"
   identificador: string
 }
  
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<Payment>[] = [
   {
     id: "select",
     header: ({ table }) => (
