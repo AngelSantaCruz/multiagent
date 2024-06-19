@@ -12,7 +12,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 import { ToggleGroup, ToggleGroupItem } from '../../../components/ui/toggle-group'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../components/ui/select'
 
-function page() {
+function Page() {
   return (
     <main className="grid flex-1 w-full gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
           <div className="mx-auto grid w-full flex-1 auto-rows-max gap-4 p-10">
@@ -267,4 +267,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

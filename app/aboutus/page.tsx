@@ -4,7 +4,7 @@ import Footer from '../../components/footer'
 import { Button } from '../../components/ui/button'
 import Link from 'next/link'
 
-function page() {
+function Page() {
   return (
     <>
     <NavBar/>
@@ -44,4 +44,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

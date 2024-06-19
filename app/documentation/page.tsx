@@ -5,7 +5,7 @@ import { Search } from 'lucide-react'
 import { Input } from '../../components/ui/input'
 import NavBar from '../../components/Navbar'
 
-function page() {
+function Page() {
   return (
     <>
     <NavBar/>
@@ -17,4 +17,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

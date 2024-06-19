@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 import { Search } from 'lucide-react'
 import { Input } from '../../components/ui/input'
 
-function page() {
+function Page() {
   return (
     <>
     <NavBar/>
@@ -77,4 +77,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
