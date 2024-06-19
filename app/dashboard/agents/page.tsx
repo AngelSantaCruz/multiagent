@@ -72,7 +72,7 @@ const data: Payment[] = [
   },
 ]
  
-export type Payment = {
+type Payment = {
   id: string
   chats: number
   Estado: "pending" | "processing" | "Activo" | "Desactivado"
