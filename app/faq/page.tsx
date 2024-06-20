@@ -11,9 +11,9 @@ function Page() {
   return (
     <>
     <NavBar/>
-    <main className='p-20 pt-[18vh] flex flex-col md:flex-row h-screen'>
+    <main className='p-20 pt-[18vh] min-h-screen h-fit flex flex-col md:flex-row '>
         <div className='basis-1/2 w-full flex flex-col gap-4 p-6 '>
-            <h1 className='text-teal-500 text-5xl font-semibold'>Preguntas Frecuentes</h1>
+            <h1 className='text-teal-500 text-5xl font-semibold md:text-start text-center'>Preguntas Frecuentes</h1>
             <h4 className='text-xl font-semibold text-slate-600 md:text-start text-center'>Explora nuestras preguntas frecuentes</h4>
              
             <div className="relative w-full flex-1 md:grow-0">

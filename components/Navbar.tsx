@@ -111,10 +111,10 @@ export default function NavBar() {
               <ListItem href="/documentation" title="Documentación">
                 introduccion description
               </ListItem>
-              <ListItem href="/documentation/installation" title="Vinculacion">
+              <ListItem href="/documentation/?search=instalacion" title="Vinculacion">
                 viculación descripción
               </ListItem>
-              <ListItem href="/documentation/primitives/typography" title="Bot configuración">
+              <ListItem href="/documentation/?search=configuracion" title="Bot configuración">
                 configuracion bot
               </ListItem>
             </ul>
