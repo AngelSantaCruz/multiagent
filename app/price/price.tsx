@@ -41,7 +41,7 @@ function Price({ className, ...props }: CardProps) {
   return (
     <>
     <NavBar/>
-    <main className='p-20 pt-[18vh] h-[120vh] flex flex-col items-center gap-8'>
+    <main className='p-20 pt-[18vh] h-fit min-h-[130vh] flex flex-col items-center gap-8'>
       <h1 className='text-5xl text-teal-500 font-semibold text-center'>
         No esperes más e impulsa tu negocio con nosotros
       </h1>

@@ -49,7 +49,9 @@ export default function Page() {
           <Image src={'/home.svg'} alt="rocket" width={100} height={100} className={`${animate} delay-300 w-full h-full min-w-[350px] min-h-[350px] absolute -bottom-20 -right-20 md:right-0`}/>
         </div>
       </section>
-      <section className="w-full h-[20vh] bg-customGreen relative"></section>
+      <section className="w-full h-[10vh] bg-teal-200 relative">
+       
+      </section>
       <section className="w-full h-[90vh] bg-teal-50 relative flex flex-col md:flex-row overflow-hidden">
       <Triangule className={`${sections>=1 ? 'translate-x-0 ': '-translate-x-[100vw] '} transition-transform ease-in-out duration-700 z-20 w-[40vw] h-[40vw] min-h-[400px] min-w-[400px] rounded-[18%] bg-gradient-to-r from-transparent to-teal-200 absolute -top-5 left-10 -rotate-[150deg]`} />
        
@@ -93,7 +95,7 @@ export default function Page() {
       <section className="w-full h-screen bg-teal-50 relative justify-center flex flex-col md:flex-row">
         
        
-          <div className="basis-1/2 md:pl-24 p-16 flex flex-col items-center md:items-start justify-center gap-8 relative z-30 "> 
+          <div className="basis-1/2 md:pl-24 p-8 md:p-16 flex flex-col items-center md:items-start justify-center gap-8 relative z-30 "> 
             <h3 className={`${sections>=2 ? 'translate-x-0 ': '-translate-x-[100vw] '} transition-transform ease-in-out duration-700 text-teal-400 text-5xl font-bold text-center md:text-start `}>
             Programa tu bot de respuestas automaticas
             </h3>
@@ -113,8 +115,10 @@ export default function Page() {
            <Image src={'/chatbot.svg'} alt="decor" width={150} height={100} className={`${sections>=2 ? 'translate-x-0 ': 'translate-x-[100vw] '} transition-transform ease-in-out duration-700 delay-100 w-3/4 h-3/4`}/>
         </div>
       </section>
-      <section className="w-full h-screen bg-teal-50 relative  flex flex-row">
-        <div className="basis-1/2 p-10  flex items-center justify-center">
+      <section className="w-full h-screen bg-teal-50 relative  flex flex-col md:flex-row">
+      <Triangule className={`${sections>=3 ? 'translate-x-0 ': 'translate-x-[100vw] '} transition-transform ease-in-out duration-700 z-10 w-[30vw] h-[30vw] min-h-[400px] min-w-[400px] rounded-[18%] bg-gradient-to-r from-transparent to-teal-200 absolute -top-25 -right-10 -rotate-[60deg] hidden md:flex `} />
+       
+        <div className="basis-1/2 p-10 hidden  md:flex items-center justify-center">
           <Image src={'/dashboard.svg'} alt="decor" width={150} height={100} className={`${sections>=3 ? 'translate-x-0 ': '-translate-x-[100vw] '} transition-transform ease-in-out duration-700 delay-100 w-3/4 h-3/4  `}/>
         </div>
         <div className="basis-1/2 md:pl-24 p-16 flex flex-col items-center md:items-start justify-center gap-8 relative z-30 ">
